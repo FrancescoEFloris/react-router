@@ -1,0 +1,18 @@
+/* Header */
+.headerWrap {
+    background-color: aqua;
+}
+
+/* NavBar */
+.nav {
+    background-color: rgb(250, 204, 1);
+}
+
+.navItem {
+    padding: 10px 20px;
+}
+
+/* Footer */
+.footerWrap {
+    background-color: aqua;
+}

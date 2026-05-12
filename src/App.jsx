@@ -1,17 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import HomePage from "./components/HomePage.jsx";
-import AboutUs from "./components/AboutUs.jsx";
-import OurProducts from "./components/OurProducts.jsx";
+import BaseLayout from "./layouts/BaseLayout.jsx";
+import HomePage from "./components/pages/HomePage.jsx";
+import AboutUs from "./components/pages/AboutUs.jsx";
+import OurProducts from "./components/pages/OurProducts.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/ourproducts" element={<OurProducts />} />
+        <Route element={<BaseLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/ourproducts" element={<OurProducts />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
