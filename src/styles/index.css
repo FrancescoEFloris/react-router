@@ -1,5 +1,8 @@
 /* Header */
 .headerWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: aqua;
 }
 
@@ -14,5 +17,11 @@
 
 /* Footer */
 .footerWrap {
+    display: flex;
+    padding: 0 30px;
     background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

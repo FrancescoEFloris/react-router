@@ -1,5 +1,9 @@
 function AboutUs() {
-    return <div>aboutus</div>;
+    return (
+        <div>
+            <h2>About Us</h2>
+        </div>
+    );
 }
 
 export default AboutUs;
