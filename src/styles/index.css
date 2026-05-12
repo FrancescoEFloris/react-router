@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(233, 182, 15);
 }
 
 /* NavBar */
@@ -18,10 +18,44 @@
 /* Footer */
 .footerWrap {
     display: flex;
-    padding: 0 30px;
-    background-color: aqua;
+    padding: 5px 30px;
+    background-color: rgb(233, 182, 15);
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    text-align: center;
+}
+
+/* Body */
+.prod-wrapper {
+    padding: 20px;
+}
+
+.prod-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px;
+}
+
+.prod-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.prod-card h3 {
+  font-size: 1.1rem;
+  flex-grow: 1;           
+}
+
+.prod-card p, 
+.prod-card button {
+  margin-top: 10px;
+}
+
+body {
+    padding-bottom: 60px; 
 }

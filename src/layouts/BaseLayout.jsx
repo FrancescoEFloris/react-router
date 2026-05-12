@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import Footer from "../components/struts/Footer.jsx";
 
 function BaseLayout() {
     return (
@@ -14,9 +15,7 @@ function BaseLayout() {
 
             <Outlet />
 
-            <footer className="footerWrap">
-                <p>Footer</p>
-            </footer>
+            <Footer />
         </>
     );
 }
