@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 function ThisProduct() {
-    const { id } = useParams();
+    const { thisproductid } = useParams();
 
     return <div>ciao</div>;
 }
