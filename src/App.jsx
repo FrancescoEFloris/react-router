@@ -4,6 +4,7 @@ import HomePage from "./components/pages/HomePage.jsx";
 import AboutUs from "./components/pages/AboutUs.jsx";
 import OurProducts from "./components/pages/OurProducts.jsx";
 import ThisProduct from "./components/pages/ThisProduct.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/ourproducts" element={<OurProducts />} />
           <Route path="/product/:thisproductid" element={<ThisProduct />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
